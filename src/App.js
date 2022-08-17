@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h2>가나다라마바사!</h2>
+      <h2>일기장햣</h2>
     </div>
   );
 }
