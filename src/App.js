@@ -2,8 +2,8 @@ import './App.css';
 
 function App() {
   return (
-    <div >
-      <h2>일기장</h2>
+    <div>
+      <h2>나의 재미있는 리엑트 공부!</h2>
     </div>
   );
 }
