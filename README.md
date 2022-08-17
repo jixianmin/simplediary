@@ -4,6 +4,12 @@
 
 ## Git사용법에 대한 연구중입니다.
 
+git remote -v는 현제 git에 등록된 원격 저장소 리스트를 보여줍니다
+
+원격 저장소 해제 git remote remove <name>명령어는 원격 저장소를 git의 설정에서 삭제합니다.저의경우 <name>을 origin 으로 해놨습니다 git remote remove origin
+
+원격 저장소 등록 git remote add <name> <url>명령어는 url으로 원격 저장소를 등록합니다.
+
 기존 origin 제거 git remove origin
 
 기본 세팅을 한뒤 git init => git remote add origin https://github.com/jixianmin/simplediary.git
