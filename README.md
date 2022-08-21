@@ -1,6 +1,8 @@
 # 인프런의 강의 한입 크기로 잘라 먹는 리액트
 
-## Simplediary를 제작하는중입니다!
+## Simplediary를 feature/simplediary 에서 제작하는중입니다!
+
+## feature/hyeonmin 에서 Router을 이용한 감정일기장를 제작하는중입니다!
 
 ## Git사용법에 대한 연구중입니다.
 
