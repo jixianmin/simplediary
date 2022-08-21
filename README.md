@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# 인프런의 강의 한입 크기로 잘라 먹는 리액트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Simplediary를 제작하는중입니다!
 
-## Available Scripts
+## Git사용법에 대한 연구중입니다.
 
-In the project directory, you can run:
+git remote -v는 현제 git에 등록된 원격 저장소 리스트를 보여줍니다
 
-### `npm start`
+원격 저장소 해제 git remote remove <name>명령어는 원격 저장소를 git의 설정에서 삭제합니다.저의경우 <name>을 origin 으로 해놨습니다 git remote remove origin
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+원격 저장소 등록 git remote add <name> <url>명령어는 url으로 원격 저장소를 등록합니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+기존 origin 제거 git remove origin
 
-### `npm test`
+기본 세팅을 한뒤 git init => git remote add origin https://github.com/jixianmin/simplediary.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+=> add . => commit => push를 진행했습니다,
 
-### `npm run build`
+다른브랜치로 이후 진행할 계획입니다
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git checkout -b feature/simplediary
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Readme의 경우 초반 세팅 이후 다시 작성했기 때문에 해당 브랜치에서 변동한 Readme의 경우
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git pull origin master를 진행 합니다
 
-### `npm run eject`
+또한 해당 브랜치에서 error없이 기본작업이 된것을 master 브랜치에서
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+git merge feature/simplediary 해보니 해당 작업이 문제없이 병합된걸 확인했습니다!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+또한 이러한 많은 작업을 진행하면서 메인 브랜치에 커밋이 3개가 쌓여있는것을 확인했고
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+그문제를 해결하기 위해 Squash를 진행하였습니다
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+git rebase -i (git log맨처음 커밋) => 중간 과정 생략 => git push
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+어떻게 해도 스쿼시가 안되는걸 보니 메인 브랜치는 안되는것 같습니다.
