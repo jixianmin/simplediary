@@ -2,6 +2,8 @@
 
 ## Simplediary를 feature/simplediary 에서 제작하는중입니다!
 
+React초기세팅에서 ESLint, Prettier 설치 및 설정을 노션에서 ESLint + Prettier 세팅 가이드를 참고하였습니다!
+
 ## feature/hyeonmin 에서 Router을 이용한 감정일기장를 제작하는중입니다!
 
 ## Git사용법에 대한 연구중입니다.
