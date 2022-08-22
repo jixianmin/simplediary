@@ -1,9 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
+import { DiaryDispatchContext } from './App';
 
-const DiaryEditor = ({ onCreate }) => {
-  useEffect(() => {
-    console.log('DiaryEditor 렌더');
-  });
+const DiaryEditor = () => {
+  const { onCreate } = useContext(DiaryDispatchContext);
 
   const authorInput = useRef();
   const contentInput = useRef();
@@ -33,7 +32,6 @@ const DiaryEditor = ({ onCreate }) => {
     }
 
     onCreate(state.author, state.content, state.emotion);
-    console.log(state);
     alert('저장성공');
     setState({
       author: '',
